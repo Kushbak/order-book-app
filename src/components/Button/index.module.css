@@ -1,0 +1,14 @@
+.button {
+  padding: .3em .7em;
+  margin: 1em;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "Calibri", sans-serif;
+  font-size: 1.2em;
+  
+}
+.button:hover {
+  cursor: pointer;
+  opacity: .8;
+}

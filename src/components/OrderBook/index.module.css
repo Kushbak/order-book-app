@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  min-height: 31.25em;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border-color: #263946;
+}
+
+.tableContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #bfc1c8;
+}
+
+
+.priceLevelRow {
+  display: flex;
+  justify-content: space-around;
+  background-color: #121723;
+  position: relative;
+}
+.priceLevelRow span {
+  z-index: 1;
+  min-width: 54px;
+}
+.priceLevelRow:after {
+  /* background-color: ${props => props.isRight ? '#113534' : '#3d1e28'}; */
+  background-position: center;
+  height: 100%;
+  padding: .3em 0;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: unset;
+  z-index: 0;
+}
+.priceLevelRowContainer {
+  margin: .155em 0;
+}
+
+
+.titleRow {
+  display: flex;
+  justify-content: space-around;
+  color: #98a6af;
+  padding: .3em;
+  background-color: #121723;
+}
+.titleRow span {
+  min-width: 5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .tableContainer {
+    width: 50%;
+  }
+
+  /* .priceLevelRow:after {
+    left: ${props => props.isRight ? 'unset' : 0};
+    right: ${props => props.isRight ? 0 : 'unset'};
+  } */
+}

@@ -1,0 +1,10 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79vh; 
+}
+.loader svg {
+  width: 4em;
+  height: 4em;
+}
